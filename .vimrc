@@ -43,6 +43,9 @@
     " Default to same plugin directory as vundle etc
     call plug#begin('~/.vim/bundle')
 
+    " A Tree Explorer 
+    Plug 'scrooloose/nerdtree'
+
     " <Tab> everything!
     Plug 'ervandew/supertab'
 
@@ -636,6 +639,10 @@
                 \join(g:syntastic_mode_map['active_filetypes'], ',') .
                 \' autocmd BufWritePost <buffer> :call s:syntastic()'
         augroup END
+    """ }}}
+    """ NERDTree Plugin {{{
+        autocmd vimenter * NERDTree
+        autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
     """ }}}
 """ }}}
 """ Local ending config, will overwrite anything above. Generally use this. {{{
