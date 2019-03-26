@@ -98,6 +98,9 @@
     " REQUIREMENTS: See :h syntastic-intro
     Plug 'vim-syntastic/syntastic'
 
+    " YouCompleteMe completer,uncomment this or put it in ~/.vimrc.plugins
+    " Plug 'Valloric/YouCompleteMe'
+    
     " Functions, class data etc.
     " depends on either exuberant-ctags or universal-ctags
     if executable('ctags-exuberant') || executable('ctags')
@@ -641,7 +644,7 @@
         augroup END
     """ }}}
     """ NERDTree Plugin {{{
-        autocmd vimenter * NERDTree
+        " autocmd vimenter * NERDTree
         autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
     """ }}}
 """ }}}
