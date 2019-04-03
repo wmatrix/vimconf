@@ -90,6 +90,12 @@
     set foldopen-=undo " don't open folds when you undo stuff
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+"""""""""""""""""""""""""""""""""""""""""""
+    "" CtrlP
+"""""""""""""""""""""""""""""""""""""""""""
+    let g:ctrlp_map = '<c-p>'
+    let g:ctrlp_cmd = 'CtrlP'
+
 if has("cscope")
     set csprg=/usr/bin/cscope
     set csto=1
@@ -110,4 +116,7 @@ nmap <C-_>e :cs find e <C-R>=expand("<cword>")<CR><CR>
 nmap <C-_>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-_>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap <C-_>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+
+nmap <Leader>t :TagbarToggle<ESC>
+nmap <Leader>e :NERDTreeToggle<ESC>
 
