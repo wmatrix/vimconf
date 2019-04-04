@@ -117,6 +117,14 @@ nmap <C-_>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-_>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap <C-_>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 
-nmap <Leader>t :TagbarToggle<ESC>
-nmap <Leader>e :NERDTreeToggle<ESC>
+nnoremap <Leader>t :TagbarToggle<CR>
+nnoremap <Leader>e :NERDTreeToggle<CR>
+nnoremap <Leader>g :tabnext<CR>
+nnoremap <Leader>g1 :tabnext 1<CR>
+nnoremap <Leader>g2 :tabnext 2<CR>
+nnoremap <Leader>g3 :tabnext 3<CR>
+nnoremap <Leader>g4 :tabnext 4<CR>
+nnoremap <Leader>g5 :tabnext 5<CR>
+nnoremap <Leader>g6 :tabnext 6<CR>
+nnoremap <Leader>g7 :tabnext 7<CR>
 
