@@ -1,5 +1,9 @@
+## 配置vimrc
 
-- <Leader> : ','
+1. 链接.vimrc: `ln -s ~/vimconf/.vimrc ~/.vimrc`
+    - <Leader> : ','
+
+2. 链接.vimrc.last(自定义的一些配置): `ln -s ~/vimconf/.vimrc.last ~/.vimrc.last`
 
 ## use YouCompleteMe
 
