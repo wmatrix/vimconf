@@ -98,6 +98,9 @@
     " REQUIREMENTS: See :h syntastic-intro
     Plug 'vim-syntastic/syntastic'
 
+    " Jinja2 template syntax 
+    Plug 'Glench/Vim-Jinja2-Syntax'
+
     " YouCompleteMe completer,uncomment this or put it in ~/.vimrc.plugins
     " Plug 'Valloric/YouCompleteMe'
     
